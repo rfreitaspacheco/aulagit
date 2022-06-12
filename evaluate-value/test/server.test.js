@@ -1,9 +1,9 @@
-const supertest = require('supertest')
+const supertest = require("supertest");
 
-const request = supertest('http://localhost:8080')
+const request = supertest("http://localhost:8000");
 
-test('should get on port 8080', async () => {
-  const response = await request.get('/')
+test("should get on port 8080", async () => {
+  const response = await request.get("/");
 
-  expect(response.status).toBe(200)
-})
+  expect(response.status).toBe(200);
+});
