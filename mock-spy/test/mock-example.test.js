@@ -44,6 +44,12 @@ test("should mock timer", (done) => {
   expect(mockCallback).toHaveBeenCalledTimes(1);
 });
 
+test("Teste 4 - subtracao", () => {
+  const subtracao = mockExample.subtrair(4, 3);
+
+  expect(subtracao).toBe(1);
+});
+
 afterEach(() => {
   jest.useRealTimers();
 });
